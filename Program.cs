@@ -30,5 +30,5 @@ foreach (var item in orderDepResult)
 //Suma de toda la población
 Console.WriteLine($"Población General:{dep.Values.Sum():N0}");
 //Mayor y menor población
-Console.WriteLine($"Departamento con Menor Población:{orderDepResult.First().key}");
-Console.WriteLine($"Departamento con mayor Población:{orderDepResult.Last().key}");
+Console.WriteLine($"Menor Población:{orderDepResult.First().key}");
+Console.WriteLine($"Mayor Población:{orderDepResult.Last().key}");
