@@ -38,7 +38,7 @@ foreach (var item in dep.Keys)
 //Ordenar con orderBy de LINQ
 var orderDepResult=dep.OrderBy(d=>d.Value);
 
-
+//mostrar los resultados
 foreach (var item in orderDepResult)
     Console.WriteLine($"{item.Key,20} ==> {item.Value,10:N0}");
 
