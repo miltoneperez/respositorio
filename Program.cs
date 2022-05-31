@@ -24,8 +24,8 @@ Dictionary<string, int> dep = new Dictionary<string, int>()
 //Ordenando de manera ascendente
 var orderDepResult=dep.OrderBy(d=>d.Value);
 
-//mostrar el diccionario ordenado por población
-foreach (var item in orderDepResult)
+//mostrar el diccionario
+foreach (var item in dep)
     Console.WriteLine($"{item.Key,-20} ==> {item.Value,10:N0}");
 //Suma de toda la población
 Console.WriteLine($"Población General:{dep.Values.Sum():N0}");
