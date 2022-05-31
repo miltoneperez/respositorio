@@ -30,5 +30,7 @@ foreach (var item in dep)
 //Suma de toda la población
 Console.WriteLine($"Población General:{dep.Values.Sum():N0}");
 //Mayor y menor población
-Console.WriteLine($"Menor Población:{orderDepResult.First().key}");
-Console.WriteLine($"Mayor Población:{orderDepResult.Last().key}");
+var minResult = dep.Where(x=> x.Value == dep.Values.Min());
+var maxResult = dep.Where(x=> x.Value == dep.Values.Max());
+Console.WriteLine($"Mas pequeño : {minResult.First().key}");
+Console.WriteLine($"Mas grande : {minResult.Last().key}");
