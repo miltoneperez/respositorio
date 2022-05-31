@@ -21,7 +21,7 @@ Dictionary<string, int> dep = new Dictionary<string, int>()
     {"Río San Juan",135446},
     {"Rivas",182645}
 };
-
+//Encontrar el mayor y el menor
 int maxDep = dep.Values.ToArray().Max();
 int minDep = dep.Values.ToArray().Min();
 string maxDepkey = "", minDepkey = "";
