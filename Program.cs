@@ -25,7 +25,7 @@ Dictionary<string, int> dep = new Dictionary<string, int>()
 int maxDep = dep.Values.ToArray().Max();
 int minDep = dep.Values.ToArray().Min();
 string maxDepkey = "", minDepkey = "";
-
+//Encontrar los nombres del mayor y el menor
 foreach (var item in dep.Keys)
 {
     if (dep[item] == maxDep)
